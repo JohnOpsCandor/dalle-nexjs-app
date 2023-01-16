@@ -13,12 +13,13 @@ export default function SearchPage() {
     const handleSubmit = async (event) => {
         event.preventDefault()
         setLoading(1);
+        prompt = `8k particle effect ${prompt}`;
         const response = await fetch('/api/image', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: 'custom painting in style of Monet' && JSON.stringify({
+            body: JSON.stringify({
                 prompt
             })
         });
