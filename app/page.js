@@ -13,14 +13,13 @@ export default function SearchPage() {
     const handleSubmit = async (event) => {
         event.preventDefault()
         setLoading(1);
-        prompt = `8k particle effect ${prompt}`;
         const response = await fetch('/api/image', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-                prompt
+                prompt: '8k particle effect ${prompt}'
             })
         });
         const imageResponse = await response.json();
