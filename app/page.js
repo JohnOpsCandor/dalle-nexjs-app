@@ -18,7 +18,7 @@ export default function SearchPage() {
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: 'custom icon, 8k particle' && JSON.stringify({
+            body: 'custom painting in style of Monet' && JSON.stringify({
                 prompt
             })
         });
