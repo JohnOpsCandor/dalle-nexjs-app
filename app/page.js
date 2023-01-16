@@ -47,7 +47,7 @@ export default function SearchPage() {
                 {/* <form action='/api/image' method="post"> */}
                 <form onSubmit={handleSubmit}>
                     <button className="btn-search"><i className="fa fa-search"></i></button>
-                    <input type="text" id="prompt" name="prompt" className="input-search" onChange={(e) => setPrompt(e.target.value)} placeholder="Generate Image with AI ..."></input>
+                    <input type="text" id="prompt" name="prompt" className="input-search" onChange={(e) => setPrompt(e.target.value)} placeholder="Enter your core values statement for automagical image generation"></input>
                 </form>
             </div>
         </div>
@@ -57,7 +57,7 @@ export default function SearchPage() {
 function Loading() {
     return (
         <div>
-            <div style={{ textAlign: "center", fontFamily: "arial", color: "#D3D3D3" }}>The robot is generating your image ....</div>
+            <div style={{ textAlign: "center", fontFamily: "arial", color: "#D3D3D3" }}>Friendly Candor robots are generating your image ....</div>
             <div class="container">
                 <svg id="robot" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 -10 960 570">
 
