@@ -20,7 +20,7 @@ export default function SearchPage() {
             },
             body: JSON.stringify({
                 // here we can bind certain prompt lay ups in between speechmark-dollar sign. 
-                prompt: 'Take the following vague statement about a company core value and generate a custom icon or meme: ${prompt}'
+                prompt: 'A custom icon or meme that means ${prompt}, futuristic, clean'
             })
         });
         const imageResponse = await response.json();
