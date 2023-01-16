@@ -19,7 +19,8 @@ export default function SearchPage() {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-                prompt: '8k particle effect ${prompt}'
+                // here we can bind certain prompt lay ups in between speechmark-dollar sign. 
+                prompt: 'Take the following vague statement about a company core value and generate a custom icon or meme: ${prompt}'
             })
         });
         const imageResponse = await response.json();
