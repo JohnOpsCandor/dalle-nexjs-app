@@ -20,7 +20,7 @@ export default function SearchPage() {
             },
             body: JSON.stringify({
                 // here we can bind certain prompt lay ups in between speechmark-dollar sign. 
-                prompt: '${prompt}, futuristic, clean icon'
+                prompt
             })
         });
         const imageResponse = await response.json();
