@@ -18,7 +18,7 @@ export default function SearchPage() {
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({
+            body: 'custom icon, 8k particle' && JSON.stringify({
                 prompt
             })
         });
