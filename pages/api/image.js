@@ -4,7 +4,7 @@ const configuration = new Configuration({
     apiKey: process.env.OPENAI_API_KEY,
 });
 
-const preset = '8k photorealistic'
+const preset = '8k photorealistic';
 
 
 export default async function handler(req, res) {
@@ -12,7 +12,7 @@ export default async function handler(req, res) {
     if (!req.body.prompt) return res.status(400).json({message: 'Pass in prompt field for image generation'});
     const openai = new OpenAIApi(configuration);
     const response = await openai.createImage({
-        prompt: req.body.prompt, preset
+        prompt: req.body.prompt, preset,
         n: 1,
         size: "512x512",
     });
