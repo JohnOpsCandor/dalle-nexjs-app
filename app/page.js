@@ -43,7 +43,10 @@ export default function SearchPage() {
     }
 
     return (
-        <div>
+        <div className="">
+            <h1>Custom emoji generator</h1>
+            <h2>For best results prompt: "3d render of x + y into custom emoji"</h2>
+            <h2>Example: "3d render of Ted Lasso and Tree into custom emoji that symbolizes kindness"</h2>
             <div className="search-box">
                 {/* <form action='/api/image' method="post"> */}
                 <form onSubmit={handleSubmit}>
